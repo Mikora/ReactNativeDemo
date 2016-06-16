@@ -1,0 +1,29 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+target 'LViewDemo' do
+
+#pod 'LuaViewSDK', :git => 'https://github.com/alibaba/LuaViewSDK.git'
+pod 'React', :path => ‘../demo3/node_modules/react-native', :subspecs => [
+'Core',
+'RCTImage',
+'RCTNetwork',
+'RCTText',
+'RCTWebSocket',
+'ART',
+'RCTActionSheet',
+'RCTAdSupport',
+'RCTCameraRoll',
+'RCTGeolocation',
+'RCTPushNotification',
+'RCTSettings',
+'RCTVibration',
+'RCTLinkingIOS',
+#'RCTTest',
+# 添加其他你想在工程中使用的依赖。
+]
+
+end
+
